@@ -444,9 +444,55 @@
                 </div>
 
                 <!-- Projects 3D Tilting Cards Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 projects-grid">
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 projects-grid">
                     
-                    <!-- Card 1 -->
+                    <!-- Card 1 : MediaCaster -->
+                    <div class="tilt-card-wrapper pointer-events-auto">
+                        <div class="tilt-card glass-card p-8 rounded-3xl flex flex-col justify-between h-[450px] relative overflow-hidden group border border-neon-cyan/20" style="transform-style: preserve-3d;">
+                            <!-- Accent Glow bottom -->
+                            <div class="absolute -bottom-20 -left-20 w-44 h-44 rounded-full bg-neon-cyan/15 filter blur-2xl group-hover:bg-neon-cyan/30 transition-all"></div>
+                            <div class="absolute -top-16 -right-16 w-36 h-36 rounded-full bg-neon-purple/10 filter blur-2xl group-hover:bg-neon-purple/20 transition-all"></div>
+
+                            <div class="space-y-6" style="transform: translateZ(50px);">
+                                <div class="flex items-center justify-between gap-3">
+                                    <span class="text-[10px] tracking-widest font-outfit text-neon-cyan font-bold uppercase bg-neon-cyan/10 px-3 py-1 rounded-full border border-neon-cyan/35">Windows App</span>
+                                    <span class="text-[10px] font-outfit text-neon-cyan font-bold uppercase flex items-center gap-1.5 whitespace-nowrap">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-neon-cyan animate-pulse"></span>
+                                        v1.3 RC1
+                                    </span>
+                                </div>
+
+                                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-neon-blue/20 to-neon-purple/20 border border-neon-cyan/30 flex items-center justify-center text-neon-cyan shadow-neon-cyan">
+                                    <i data-lucide="monitor-play" class="w-7 h-7"></i>
+                                </div>
+
+                                <div>
+                                    <h3 class="font-outfit font-bold text-2xl text-white group-hover:text-neon-cyan transition-colors">MEDIACASTER</h3>
+                                    <p class="text-[11px] tracking-[0.18em] uppercase text-neon-blue font-outfit mt-1">Digital Signage Platform</p>
+                                </div>
+
+                                <p class="text-slate-400 font-light text-sm leading-relaxed">
+                                    이미지·동영상·PDF·RTSP를 통합 관리하고 예약 송출하는 Windows 기반 디지털 사이니지 플랫폼. 공지, 날씨, 미세먼지, 광고와 긴급 메시지를 하나의 운영 화면에서 제어합니다.
+                                </p>
+                            </div>
+
+                            <div class="space-y-4" style="transform: translateZ(30px);">
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="text-[10px] bg-white/5 border border-white/10 px-2.5 py-1 rounded text-slate-400">Python</span>
+                                    <span class="text-[10px] bg-white/5 border border-white/10 px-2.5 py-1 rounded text-slate-400">Tkinter</span>
+                                    <span class="text-[10px] bg-white/5 border border-white/10 px-2.5 py-1 rounded text-slate-400">VLC</span>
+                                    <span class="text-[10px] bg-white/5 border border-white/10 px-2.5 py-1 rounded text-slate-400">SQLite</span>
+                                </div>
+
+                                <a href="./mediacaster.html" class="inline-flex items-center space-x-2 text-xs font-bold text-neon-cyan group-hover:text-white transition-colors bg-neon-cyan/5 px-3 py-2 rounded-lg border border-neon-cyan/20 hover:border-neon-cyan/50">
+                                    <span>프로젝트 상세 보기</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
                     <div class="tilt-card-wrapper pointer-events-auto">
                         <div class="tilt-card glass-card p-8 rounded-3xl flex flex-col justify-between h-[450px] relative overflow-hidden group border border-white/10" style="transform-style: preserve-3d;">
                             <!-- Accent Glow bottom -->
@@ -455,7 +501,7 @@
                             <div class="space-y-6" style="transform: translateZ(50px);">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[10px] tracking-widest font-outfit text-neon-cyan font-bold uppercase bg-neon-cyan/10 px-3 py-1 rounded-full border border-neon-cyan/35">네트워크 인프라</span>
-                                    <span class="text-[10px] font-outfit text-slate-500 font-bold uppercase">프로젝트 01</span>
+                                    <span class="text-[10px] font-outfit text-slate-500 font-bold uppercase">프로젝트 02</span>
                                 </div>
                                 <h3 class="font-outfit font-bold text-2xl text-white group-hover:text-neon-cyan transition-colors">THE COGNITIVE INTERNET</h3>
                                 <p class="text-slate-400 font-light text-sm leading-relaxed">
@@ -477,7 +523,7 @@
                         </div>
                     </div>
 
-                    <!-- Card 2 -->
+                    <!-- Card 3 -->
                     <div class="tilt-card-wrapper pointer-events-auto">
                         <div class="tilt-card glass-card p-8 rounded-3xl flex flex-col justify-between h-[450px] relative overflow-hidden group border border-white/10" style="transform-style: preserve-3d;">
                             <!-- Accent Glow bottom -->
@@ -486,7 +532,7 @@
                             <div class="space-y-6" style="transform: translateZ(50px);">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[10px] tracking-widest font-outfit text-neon-blue font-bold uppercase bg-neon-blue/10 px-3 py-1 rounded-full border border-neon-blue/35">CCTV 관제 솔루션</span>
-                                    <span class="text-[10px] font-outfit text-slate-500 font-bold uppercase">프로젝트 02</span>
+                                    <span class="text-[10px] font-outfit text-slate-500 font-bold uppercase">프로젝트 03</span>
                                 </div>
                                 <h3 class="font-outfit font-bold text-2xl text-white group-hover:text-neon-blue transition-colors">GUARDIAN EYE ORBIT</h3>
                                 <p class="text-slate-400 font-light text-sm leading-relaxed">
@@ -508,7 +554,7 @@
                         </div>
                     </div>
 
-                    <!-- Card 3 -->
+                    <!-- Card 4 -->
                     <div class="tilt-card-wrapper pointer-events-auto">
                         <div class="tilt-card glass-card p-8 rounded-3xl flex flex-col justify-between h-[450px] relative overflow-hidden group border border-white/10" style="transform-style: preserve-3d;">
                             <!-- Accent Glow bottom -->
@@ -517,7 +563,7 @@
                             <div class="space-y-6" style="transform: translateZ(50px);">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[10px] tracking-widest font-outfit text-neon-purple font-bold uppercase bg-neon-purple/10 px-3 py-1 rounded-full border border-neon-purple/35">지식 보급 매체</span>
-                                    <span class="text-[10px] font-outfit text-slate-500 font-bold uppercase">프로젝트 03</span>
+                                    <span class="text-[10px] font-outfit text-slate-500 font-bold uppercase">프로젝트 04</span>
                                 </div>
                                 <h3 class="font-outfit font-bold text-2xl text-white group-hover:text-neon-purple transition-colors">ZERO-GRAVITY LEARNING</h3>
                                 <p class="text-slate-400 font-light text-sm leading-relaxed">
